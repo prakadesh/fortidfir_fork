@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FortiDFIR v3.1 — PRAKADESH Fork</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Courier New',monospace;background:#0a0a0f;color:#cdd;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center}
+h1{color:#00d4ff;font-size:1.8rem;margin-bottom:1rem}
+p{color:#aaa;max-width:600px;line-height:1.7;margin-bottom:.5rem}
+pre{background:#111827;border:1px solid #00d4ff33;padding:1.2rem 1.5rem;border-radius:8px;text-align:left;font-size:.85rem;color:#00ff88;margin:1.2rem 0;overflow-x:auto}
+.badge{display:inline-block;border:1px solid #00d4ff44;padding:.3rem .8rem;border-radius:4px;font-size:.75rem;margin:.3rem;color:#00d4ff}
+.note{color:#ffaa44;font-size:.85rem;margin-top:.8rem}
+a{color:#00d4ff;text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<h1>🛡️ FortiDFIR v3.1.0 — PRAKADESH Fork</h1>
+<p>The full analyzer HTML (102 KB) is too large to push directly via the GitHub MCP API.<br>Download it from the release below and push manually.</p>
+<div>
+<span class="badge">WAF</span>
+<span class="badge">IPS</span>
+<span class="badge">VPN/SSL-VPN</span>
+<span class="badge">Traffic/forward</span>
+<span class="badge">Traffic/local</span>
+<span class="badge">UTM/app-ctrl</span>
+<span class="badge">UTM/ssl</span>
+<span class="badge">User/Auth</span>
+<span class="badge">Endpoint/FortiClient</span>
+</div>
+<pre>
+# Clone and push manually:
+git clone https://github.com/prakadesh/fortidfir_fork.git
+# Copy FORTIDFIR.html (from download) into the cloned folder
+cd fortidfir_fork
+git add FORTIDFIR.html
+git commit -m "feat: v3.1.0 full parser suite"
+git push origin main
+</pre>
+<p class="note">⚠️ The MCP GitHub tool has a content-size limit that prevents pushing 100KB+ HTML files directly.</p>
+<p style="margin-top:1.2rem"><a href="https://github.com/prakadesh/fortidfir_fork" target="_blank">github.com/prakadesh/fortidfir_fork</a></p>
+</body>
+</html>
